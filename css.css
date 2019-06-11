@@ -1,0 +1,429 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge*/
+   user-select: none;          /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+a{
+  font-family: fantasy;
+  color:orangered;
+}
+label{
+  text-align: center;
+}
+p{
+  font-size: 14px;
+  margin:0;
+  font-style: italic;
+}
+strike{
+  font-style: italic;
+}
+h1,h2,h3{
+  margin: 1px;
+}
+a{
+  font-family: sans-serif;
+  text-align: center;
+}
+.mainContainter{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.parallax1{
+  position:absolute;
+  height:100%;
+  width:100%;
+  padding:0;
+  top:0;
+  left:0;
+  background-image:url("image/p1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.parallax2{
+  position:absolute;
+  height:100%;
+  width:100%;
+  padding:0;
+  top:170%;
+  left:0;
+  background-image:url("image/p2.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.footer{
+  bottom:0;
+  position: absolute;
+  height:5%;
+  width:100%;
+  left:0;
+  background-color: transparent;
+  color:gray;
+}
+.spanFooter{
+  border:0;
+  padding: 0;
+  left:15%;
+  top:50%;
+  position: absolute;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.spanFooter2{
+  border:0;
+  padding: 0;
+  right:0;
+  top:50%;
+  position: absolute;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.spanFooter3{
+  border:0;
+  padding: 0;
+  right:45%;
+  top:50%;
+  position: absolute;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.conDetails{
+  font-size: 12px;
+  font-display: block;
+  font-family: sans-serif;
+  bottom:5%;
+  left: 20%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: gray;
+}
+.contxt{
+  font-size: 45px;
+}
+.btndl{
+  color:white;
+  width: 200px;
+  padding: 15px;
+  border: 2px solid gray;
+  position: absolute;
+  top:35%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: transparent;
+}
+.btnd2{
+  color:white;
+  width: 200px;
+  padding: 15px;
+  border: 2px solid gray;
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: transparent;
+}
+.btndl::after,.btnd2::after{
+  content: '';
+  width: 0;
+  height: 120%;
+  position: absolute;
+  left:-10%;
+  bottom:0;
+  background-color: maroon;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: .5s;
+}
+.btndl:hover,.btnd2:hover{
+  cursor: pointer;
+}
+.btndl:hover::after,.btnd2:hover::after{
+  left:-10%;
+  width: 120%;
+}
+.headerContainer{
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:10%;
+  width:80%;
+  left:10%;
+  top:0;
+  background-color:black;
+  z-index: 1;
+  opacity:0.3;
+}
+.headerContainer:hover{
+  opacity: .7;
+}
+.logo{
+  position:absolute;
+  height:100%;
+  width:25%;
+  left:2.5%;
+  top:0;
+  background-image:url("image/logo.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.logo:hover{
+  background-image:url("image/logo-hover.png");
+  transition: .8s;
+}
+.navBar{
+  position:absolute;
+  height:100%;
+  width:80%;
+  left:20%;
+  top:0;
+  background-color: inherit;
+}
+.btnwrapper{
+  position:absolute;
+  height:100%;
+  width:50%;
+  left:50%;
+  top:0;
+  background-color: inherit;
+}
+.fbbtn{
+  border: none;
+  height: 17px;
+  width: 17px;
+  top:0;
+  left:110%;
+  padding: 0;
+  margin:0;
+  background-image: url("image/fb.jpg");
+  background-size: cover;
+  text-align: center;
+  position: absolute;
+  background-color: transparent;
+  overflow: hidden;
+  color:transparent;
+}
+.homebtn{
+  height: 35px;
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  top:20%;
+  right:50%;
+  background-color: transparent;
+  color:#ccc;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.homebtn:hover,.resumebtn:hover,.contactbtn:hover{
+  background-color: white;
+  opacity: 1;
+  color:orangered;
+  transition: .5s;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.resumebtn{
+  height: 35px;
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  top:20%;
+  right:30%;
+  background: none;
+  color:#ccc;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 1px;
+  transition: .6s;
+  overflow: hidden;
+}
+.contactbtn{
+  height: 35px;
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  top:20%;
+  right:10%;
+  background: none;
+  color:#ccc;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 1px;
+  transition: .6s;
+  overflow: hidden;
+}
+.welcomePage{
+  position:absolute;
+  height:95%;
+  width:100%;
+  left:0;
+  top:5%;
+  background-color:transparent;
+  color:gray;
+  text-align: left;
+  font-family: sans-serif;
+}
+.particlesContainer{
+  background-size: cover;
+  position:absolute;
+  height:75%;
+  width:80%;
+  padding:0;
+  top:10%;
+  left:10%;
+}
+.trans1{
+  width:100%;
+  height:70%;
+  position: absolute;
+  top:100%;
+  left:0;
+  color:white;
+  text-align: center;
+  background-image:url("image/t1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.adjust{
+  width:100%;
+  height:0;
+  position: absolute;
+  top:85%;
+  left:0;
+}
+.downloadSection
+{
+  position:absolute;
+  height:100%;
+  width:30%;
+  padding:0;
+  top:0;
+  left:0;
+  background-color: transparent;
+}
+.imageSection{
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  padding:0;
+  top:0;
+  left:30%;
+  background-color: transparent;
+}
+.dlMyresume{
+  font-size: 32px;
+  font-display: block;
+  font-family: sans-serif;
+  top:20%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.dlMyphoto{
+  font-size: 32px;
+  font-display: block;
+  font-family: sans-serif;
+  top:55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.dlLmao{
+  font-size: 12px;
+  font-style: italic;
+  font-display: block;
+  font-family: sans-serif;
+  top:80%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.imageWrapper1{
+  opacity: 0.7;
+  background-color: white;
+  color:gray;
+  position: absolute;
+  height: 75%;
+  width: 25%;
+  left:0;
+  top:10%;
+  border: solid 10px black;
+}
+.imageWrapper2{
+  opacity: 0.7;
+  background-color: white;
+  color:gray;
+  position: absolute;
+  height: 75%;
+  width: 25%;
+  left:30%;
+  top:10%;
+  border: solid 10px black;
+}
+.imageWrapper3{
+  opacity: 0.7;
+  background-color: white;
+  color:gray;
+  position: absolute;
+  height: 75%;
+  width: 25%;
+  left:60%;
+  top:10%;
+  border: solid 10px black;
+}
+.slideImages{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top:0;
+}
+.profile{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  padding:0;
+  border-radius: 50%;
+  top:10%;
+  left:5%;
+  opacity: 0.9;
+}
+.introduction{
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  color:gray;
+}
+.pitch{
+  position: absolute;
+  right:5%;
+  top: 65%;
+  color:gray;
+  text-align: right;
+  font-style: italic;
+}
