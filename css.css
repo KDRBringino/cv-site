@@ -182,12 +182,12 @@ a{
   width:25%;
   left:2.5%;
   top:0;
-  background-image:url("image/logo.png");
+  background-image:url("image/logo.webp");
   background-size:contain;
   background-repeat: no-repeat;
 }
 .logo:hover{
-  background-image:url("image/logo-hover.png");
+  background-image:url("image/logo-hover.webp");
   transition: .8s;
 }
 .navBar{
