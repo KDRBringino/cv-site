@@ -51,7 +51,7 @@ a{
   padding:0;
   top:0;
   left:0;
-  background-image:url("image/p1.jpg");
+  background-image:url("image/p1.webp");
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -63,7 +63,7 @@ a{
   padding:0;
   top:170%;
   left:0;
-  background-image:url("image/p2.jpg");
+  background-image:url("image/p2.webp");
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover;
@@ -302,7 +302,7 @@ a{
   left:0;
   color:white;
   text-align: center;
-  background-image:url("image/t1.jpg");
+  background-image:url("image/t1.webp");
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment: fixed;
