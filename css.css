@@ -174,7 +174,7 @@ a{
   opacity:0.3;
 }
 .headerContainer:hover{
-  opacity: .7;
+  opacity: .1;
 }
 .logo{
   position:absolute;
