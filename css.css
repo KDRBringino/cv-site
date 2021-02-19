@@ -196,7 +196,7 @@ a{
   width:80%;
   left:20%;
   top:0;
-  background-color: inherit;
+  background-color: transparent;
 }
 .btnwrapper{
   position:absolute;
@@ -204,7 +204,7 @@ a{
   width:50%;
   left:50%;
   top:0;
-  background-color: inherit;
+  background-color: transparent;
 }
 .fbbtn{
   border: none;
